@@ -1,6 +1,6 @@
 {% extends sonata_block.templates.block_base %}
 {% set titles = report.labels %}
-{% set values = report.mainReport.modelData.reports[0].data.rows[0].metrics[0].values %}
+{% set values = report.mainReport.reports[0].data.rows[0].metrics[0].values %}
 
 {% block block %}
     <div class="col-xs-12 col-md-12">
