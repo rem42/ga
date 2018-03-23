@@ -1,10 +1,10 @@
 services:
     ersah.list.service.ga:
         class: Ersah\GABundle\Utils\GAList
-        arguments: ['%view_id%','%limit%','%from%','%to%','%sorting%', '%sortby%','%json_key_file%','%dimensions%', '%listMetrics%','%mainMetrics%']
+        arguments: ['%view_id%','%limit%','%from%','%to%','%sorting%', '%sortBy%','%json_key_file%','%dimensions%', '%listMetrics%','%mainMetrics%']
     ersah.main.service.ga:
         class: Ersah\GABundle\Utils\GAMain
-        arguments: ['%view_id%','%limit%','%from%','%to%','%sorting%', '%sortby%','%json_key_file%','%dimensions%', '%listMetrics%','%mainMetrics%']
+        arguments: ['%view_id%','%limit%','%from%','%to%','%sorting%', '%sortBy%','%json_key_file%','%dimensions%', '%listMetrics%','%mainMetrics%']
     admin.ga.reports:
         class: Ersah\GABundle\Admin\GAAdmin
         arguments: [~, Ersah\GABundle\Entity\GA, 'ErsahGABundle:GAAdmin']
